@@ -31,5 +31,6 @@ Follow these steps to run the project locally:
    ```bash
    git clone https://github.com/Ajay-kumar-882/netflix-clone.git
 
-2. 
+2. netflix UI
+         https://ajay-kumar-882.github.io/NETFLIX_Clone/
   
