@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="shortcut icon"
+      href="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/227_Netflix_logo-1024.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+  </head>
+  <body class="bg-black text-white">
+    <div
+      class="relative w-full h-screen bg-cover bg-center"
+      style="
+        background-image: url('https://media.istockphoto.com/id/2166463582/photo/media-concept-multiple-television-screens-smart-tv-digital-data-streaming.jpg?s=2048x2048&w=is&k=20&c=QszbNJk_U_kLZKFyyxXPvHC6j0SzN-HfRiOhfFrfrXY=');
+      "
+    >
+      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+      <!-- Navbar -->
+      <div
+        class="absolute top-0 left-0 w-full flex items-center justify-between px-6 md:px-16 py-4 z-10"
+      >
+        <h1 class="text-3xl font-bold text-red-600">NETFLIX</h1>
+        <div class="flex gap-5">
+          <select name="" id="" class="text-black">
+            <option value="english">eng</option>
+            <option value="">hi</option>
+          </select>
+          
+
+          <button
+            class="bg-red-600 px-4 py-2 rounded font-medium hover:bg-red-700 cursor-pointer"
+          >
+            Sign In
+          </button>
+        </div>
+      </div>
+
+      <!-- Unlimited movies, TV shows and more -->
+      <div
+        class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-10"
+      >
+        <h1 class="text-3xl md:text-5xl font-bold mb-4">
+          Unlimited movies, TV shows and more
+        </h1>
+        <h2 class="text-lg md:text-2xl mb-6">
+          Watch anywhere. Cancel anytime.
+        </h2>
+        <p class="mb-4 text-sm md:text-lg">
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+        <div class="flex flex-col md:flex-row gap-2 w-full md:w-auto">
+          <input
+            type="email"
+            placeholder="Email address"
+            class="px-4 py-3 w-full md:w-80 text-black rounded"
+          />
+          <button
+            class="bg-red-600 px-6 py-3 rounded font-medium hover:bg-red-700"
+          >
+            Get Started >
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trending Now Section -->
+    <section class="px-6 py-10 md:px-12 lg:px-20">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 hover:underline">
+        Trending Now
+      </h2>
+
+      <!-- Responsive Grid -->
+      <div
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4"
+      >
+        <!-- Movie Card -->
+        <div class="relative group">
+          <img
+            src="https://dnm.nflximg.net/api/v6/ALnfVbMvPhqZAIuQMLkxmdJcXYk/AAAAQXhUBG8m7Zwln8MvFzK4V44JtL2MUmmzDGVbcvONkI1CmBF7FanFxw4xHZpb0h-yqHlA0TiDgHITyAPT9_WdDLSvKtHXntkJIdcNmVeCJzx1TrNF8oD4qUR_GQzWVUg1DzBu1TTgWE0r8X5r1EwS8wyXZ0bpHZVOl-4aVX4tc4ifLRAw5upNFNA7geqJKCquGh8_A14NPCY54jAr6S4125bBq8X_3XLEMjlpwuVXncNTt-Z289qmUPlEJSShw7VBJfxg93l5qk372va-XQ.jpg?r=b1c"
+            alt="Movie 1"
+            class="rounded-lg transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+
+        <div class="relative group">
+          <img
+            src="https://dnm.nflximg.net/api/v6/ALnfVbMvPhqZAIuQMLkxmdJcXYk/AAAAQYPxOwvSjztxhcGZE0LNrnWvM-S1jJRvg9Hhrgy8QCxws1VyZMBN3_6HHzQKpX27HLEKsydO6AjBB4Jr9eAKqe04mlzp7T482Y6pV1cV9Tcah7yU3nUWd0lza9Y1tEOGYiBMM5qYulY7UiWdhVyoDj86Uu9Yh2aAAgVNPZ7b_eaJ2Z_5qFg52EEhsDoCcJ_5r74-RL55oBN-6hqg4ufXvKj406nuIN2aKDmbRgP1S49uuMcgoZvhn_e_SwqSfY8AkGgWp44ouNOGX-uQzw.jpg?r=3a5"
+            alt="Movie 2"
+            class="rounded-lg transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+
+        <div class="relative group">
+          <img
+            src="https://media.vanityfair.com/photos/68813a38de07f8a167840ae2/1:1/w_1600%2Cc_limit/Wednesday_n_S2_E3_00_26_46_14R3.jpg"
+            alt="Movie 3"
+            class="rounded-lg transition-transform duration-300 group-hover:scale-105 object-cover"
+          />
+        </div>
+
+        <div class="relative group">
+          <img
+            src="https://media.vanityfair.com/photos/68813a38de07f8a167840ae2/1:1/w_1600%2Cc_limit/Wednesday_n_S2_E3_00_26_46_14R3.jpg"
+            alt="Movie 4"
+            class="rounded-lg transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+
+        <div class="relative group">
+          <img
+            src="https://dnm.nflximg.net/api/v6/ALnfVbMvPhqZAIuQMLkxmdJcXYk/AAAAQYPxOwvSjztxhcGZE0LNrnWvM-S1jJRvg9Hhrgy8QCxws1VyZMBN3_6HHzQKpX27HLEKsydO6AjBB4Jr9eAKqe04mlzp7T482Y6pV1cV9Tcah7yU3nUWd0lza9Y1tEOGYiBMM5qYulY7UiWdhVyoDj86Uu9Yh2aAAgVNPZ7b_eaJ2Z_5qFg52EEhsDoCcJ_5r74-RL55oBN-6hqg4ufXvKj406nuIN2aKDmbRgP1S49uuMcgoZvhn_e_SwqSfY8AkGgWp44ouNOGX-uQzw.jpg?r=3a5"
+            alt="Movie 5"
+            class="rounded-lg transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+
+        <div class="relative group">
+          <img
+            src="https://dnm.nflximg.net/api/v6/ALnfVbMvPhqZAIuQMLkxmdJcXYk/AAAAQYPxOwvSjztxhcGZE0LNrnWvM-S1jJRvg9Hhrgy8QCxws1VyZMBN3_6HHzQKpX27HLEKsydO6AjBB4Jr9eAKqe04mlzp7T482Y6pV1cV9Tcah7yU3nUWd0lza9Y1tEOGYiBMM5qYulY7UiWdhVyoDj86Uu9Yh2aAAgVNPZ7b_eaJ2Z_5qFg52EEhsDoCcJ_5r74-RL55oBN-6hqg4ufXvKj406nuIN2aKDmbRgP1S49uuMcgoZvhn_e_SwqSfY8AkGgWp44ouNOGX-uQzw.jpg?r=3a5"
+            alt="Movie 6"
+            class="rounded-lg transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 -->
+    <section class="px-6 py-10 md:px-12 lg:px-20">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 hover:underline">
+        Popular Now
+      </h2>
+
+      <!-- Responsive Grid -->
+      <div
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4"
+      >
+        <!-- Movie Card -->
+        <div class="relative group">
+          <img
+            src="https://dnm.nflximg.net/api/v6/ALnfVbMvPhqZAIuQMLkxmdJcXYk/AAAAQXhUBG8m7Zwln8MvFzK4V44JtL2MUmmzDGVbcvONkI1CmBF7FanFxw4xHZpb0h-yqHlA0TiDgHITyAPT9_WdDLSvKtHXntkJIdcNmVeCJzx1TrNF8oD4qUR_GQzWVUg1DzBu1TTgWE0r8X5r1EwS8wyXZ0bpHZVOl-4aVX4tc4ifLRAw5upNFNA7geqJKCquGh8_A14NPCY54jAr6S4125bBq8X_3XLEMjlpwuVXncNTt-Z289qmUPlEJSShw7VBJfxg93l5qk372va-XQ.jpg?r=b1c"
+            alt="Movie 1"
+            class="rounded-lg transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+
+        <div class="relative group">
+          <img
+            src="https://dnm.nflximg.net/api/v6/ALnfVbMvPhqZAIuQMLkxmdJcXYk/AAAAQYPxOwvSjztxhcGZE0LNrnWvM-S1jJRvg9Hhrgy8QCxws1VyZMBN3_6HHzQKpX27HLEKsydO6AjBB4Jr9eAKqe04mlzp7T482Y6pV1cV9Tcah7yU3nUWd0lza9Y1tEOGYiBMM5qYulY7UiWdhVyoDj86Uu9Yh2aAAgVNPZ7b_eaJ2Z_5qFg52EEhsDoCcJ_5r74-RL55oBN-6hqg4ufXvKj406nuIN2aKDmbRgP1S49uuMcgoZvhn_e_SwqSfY8AkGgWp44ouNOGX-uQzw.jpg?r=3a5"
+            alt="Movie 2"
+            class="rounded-lg transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+
+        <div class="relative group">
+          <img
+            src="https://media.vanityfair.com/photos/68813a38de07f8a167840ae2/1:1/w_1600%2Cc_limit/Wednesday_n_S2_E3_00_26_46_14R3.jpg"
+            alt="Movie 3"
+            class="rounded-lg transition-transform duration-300 group-hover:scale-105 object-cover"
+          />
+        </div>
+
+        <div class="relative group">
+          <img
+            src="https://media.vanityfair.com/photos/68813a38de07f8a167840ae2/1:1/w_1600%2Cc_limit/Wednesday_n_S2_E3_00_26_46_14R3.jpg"
+            alt="Movie 4"
+            class="rounded-lg transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+
+        <div class="relative group">
+          <img
+            src="https://dnm.nflximg.net/api/v6/ALnfVbMvPhqZAIuQMLkxmdJcXYk/AAAAQYPxOwvSjztxhcGZE0LNrnWvM-S1jJRvg9Hhrgy8QCxws1VyZMBN3_6HHzQKpX27HLEKsydO6AjBB4Jr9eAKqe04mlzp7T482Y6pV1cV9Tcah7yU3nUWd0lza9Y1tEOGYiBMM5qYulY7UiWdhVyoDj86Uu9Yh2aAAgVNPZ7b_eaJ2Z_5qFg52EEhsDoCcJ_5r74-RL55oBN-6hqg4ufXvKj406nuIN2aKDmbRgP1S49uuMcgoZvhn_e_SwqSfY8AkGgWp44ouNOGX-uQzw.jpg?r=3a5"
+            alt="Movie 5"
+            class="rounded-lg transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+
+        <div class="relative group">
+          <img
+            src="https://dnm.nflximg.net/api/v6/ALnfVbMvPhqZAIuQMLkxmdJcXYk/AAAAQYPxOwvSjztxhcGZE0LNrnWvM-S1jJRvg9Hhrgy8QCxws1VyZMBN3_6HHzQKpX27HLEKsydO6AjBB4Jr9eAKqe04mlzp7T482Y6pV1cV9Tcah7yU3nUWd0lza9Y1tEOGYiBMM5qYulY7UiWdhVyoDj86Uu9Yh2aAAgVNPZ7b_eaJ2Z_5qFg52EEhsDoCcJ_5r74-RL55oBN-6hqg4ufXvKj406nuIN2aKDmbRgP1S49uuMcgoZvhn_e_SwqSfY8AkGgWp44ouNOGX-uQzw.jpg?r=3a5"
+            alt="Movie 6"
+            class="rounded-lg transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- More Reasons to Join -->
+
+    <section class="px-6 py-16 md:px-20">
+      <h2 class="text-2xl md:text-3xl font-bold mb-10 hover:underline">
+        More Reasons to Join
+      </h2>
+
+      <!--movie  Cards -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 h-auto md:grid-cols-2 lg:grid-cols-4 gap-6 text-center"
+      >
+        <!-- Card 1 -->
+        <div
+          class="p-6 rounded-2xl bg-gradient-to-r h-60 from-indigo-950 via-purple-950 to-pink-950 shadow-lg hover:scale-105 transition-transform"
+        >
+          <h3 class="text-lg font-semibold mb-2">Enjoy on your TV</h3>
+          <p class="text-gray-400 text-sm">
+            Watch on Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+            players and more.
+          </p>
+          <i class="fa-solid fa-tv text-6xl mt-8 hover:text-pink-800"></i>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-gradient-to-r from-indigo-950 h-60 via-purple-950 to-pink-950 p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform"
+        >
+          <h3 class="text-lg font-semibold mb-2">Download your shows</h3>
+          <p class="text-gray-400 text-sm">
+            Save your favourites easily and always have something to watch
+            offline.
+          </p>
+          <i class="fa-solid fa-film text-6xl mt-8 hover:text-pink-800"></i>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-gradient-to-r from-indigo-950 h-60 via-purple-950 to-pink-950 p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform"
+        >
+          <h3 class="text-lg font-semibold mb-2">Watch everywhere</h3>
+          <p class="text-gray-400 text-sm">
+            Stream unlimited movies and TV shows on your phone, tablet, laptop,
+            and TV.
+          </p>
+          <i class="fa-solid fa-video text-6xl mt-8 hover:text-pink-800"></i>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="bg-gradient-to-r from-indigo-950 h-60 via-purple-950 to-pink-950 p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform"
+        >
+          <h3 class="text-lg font-semibold mb-2">Create profiles for kids</h3>
+          <p class="text-gray-400 text-sm">
+            Send kids on adventures with their favourite characters in a space
+            made just for them.
+          </p>
+          <i class="fa-solid fa-heart text-6xl mt-8 hover:text-pink-800"></i>
+        </div>
+      </div>
+    </section>
+
+    <!--Frequently Asked Questions -->
+    <div class="bg-black text-white py-16 px-6 md:px-20">
+      <h2
+        class="text-3xl md:text-5xl font-bold text-center mb-8 hover:underline"
+      >
+        Frequently Asked Questions
+      </h2>
+
+      <div class="space-y-4 w-full max-w-8xl mx-auto">
+        <details class="bg-gray-800 p-4 md:p-6 rounded">
+          <summary class="cursor-pointer text-lg md:text-xl font-medium">
+            What is Netflix?
+          </summary>
+          <p class="mt-2 text-gray-300 text-sm md:text-base">
+            Netflix is a streaming service that offers a wide variety of TV
+            shows, movies, anime, documentaries and more.
+          </p>
+        </details>
+
+        <details class="bg-gray-800 p-4 md:p-6 rounded">
+          <summary class="cursor-pointer text-lg md:text-xl font-medium">
+            How much does Netflix cost?
+          </summary>
+          <p class="mt-2 text-gray-300 text-sm md:text-base">
+            Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
+            streaming device, all for one fixed monthly fee.
+          </p>
+        </details>
+
+        <details class="bg-gray-800 p-4 md:p-6 rounded">
+          <summary class="cursor-pointer text-lg md:text-xl font-medium">
+            Where can I watch?
+          </summary>
+          <p class="mt-2 text-gray-300 text-sm md:text-base">
+            Watch anywhere, anytime, on unlimited devices. Sign in with your
+            Netflix account to watch instantly.
+          </p>
+        </details>
+
+        <details class="bg-gray-800 p-4 md:p-6 rounded">
+          <summary class="cursor-pointer text-lg md:text-xl font-medium">
+            How do I cancel?
+          </summary>
+          <p class="mt-2 text-gray-300 text-sm md:text-base">
+            Netflix is flexible. There are no contracts and no commitments.
+            Cancel online anytime in a few clicks.
+          </p>
+        </details>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="bg-black text-white py-12 px-6 md:px-20 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6">Contact the Developer</h2>
+      <p class="text-gray-400 mb-6">
+        Have questions, suggestions, or feedback? Feel free to reach out.
+      </p>
+
+      <div class="md:flex justify-between">
+        <p>
+          📧 Email:
+          <a
+            href="mailto:ajaykumartilkar59@email.com"
+            class="text-red-500 hover:underline"
+            >ajaykumartilkar59@email.com</a
+          >
+        </p>
+        <p>
+          💼 LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/ak-tilkar/"
+            target="_blank"
+            class="text-red-500 hover:underline"
+            >ak-tilkar</a
+          >
+        </p>
+        <p>
+          🐙 GitHub:
+          <a
+            href="https://github.com/Ajay-kumar-882"
+            target="_blank"
+            class="text-red-500 hover:underline"
+          >
+            Ak tilkar</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <footer class="bg-black text-gray-400 py-10 px-6 md:px-20">
+      <p class="mb-6">Questions? Call +918824487607</p>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+        <a class="hover:underline" href="#">FAQ</a>
+        <a class="hover:underline" href="#">Help Centre</a>
+        <a class="hover:underline" href="#">Account</a>
+        <a class="hover:underline" href="#">Media Centre</a>
+        <a class="hover:underline" href="#">Investor Relations</a>
+        <a class="hover:underline" href="#">Jobs</a>
+        <a class="hover:underline" href="#">Ways to Watch</a>
+        <a class="hover:underline" href="#">Terms of Use</a>
+        <a class="hover:underline" href="#">Privacy</a>
+        <a class="hover:underline" href="#">Cookie Preferences</a>
+        <a class="hover:underline" href="#">Corporate Information</a>
+        <a class="hover:underline" href="#">Contact Us</a>
+      </div>
+      <p class="text-center text-gray-400 mt-12">
+        🚀 Built with ❤️ by
+        <a
+          href="https://www.instagram.com/ak_tilkar/?hl=en"
+          class="text-gray-600 font-bold shadow-lg text-shadow-white bg-transparent"
+          >Ajay Kumar</a
+        >
+        | Frontend Developer
+      </p>
+    </footer>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+  </body>
+</html>
